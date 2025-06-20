@@ -12,6 +12,12 @@
           {{.subtitle}}
         </p>
         {{ end }}
+        {{ with .cta }}
+  <a href="{{ .link }}"
+     class="f6 link dim br-pill ph4 pv3 dib white bg-primary">
+    {{ .text }}
+  </a>
+  {{ end }}
       </div>
     </div>
   </div>
